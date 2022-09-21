@@ -1,0 +1,15 @@
+<!-- This creates the input box and the click me button -->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<button id="my-button">Click Me</button>
+
+<!-- This is gathering the input from the two boxes, the name input and the click me button -->
+<script>
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+// This is taking the value obtained in the name input and out putting it in a alert box
+  myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
